@@ -1,0 +1,94 @@
+body{
+    background-image:url("https://wallup.net/wp-content/uploads/2018/09/30/199516-nature-chameleons-artwork-reptiles.jpg");
+    background-size: cover;
+}
+h1{
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+/* SOCIAL MEDIA */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 35%;
+    color: black;
+    background: #3B5998;
+    color: white;
+    margin: 5px;
+  }
+.Logo{
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+}
+/* GRID CSS */
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 2.3fr 0.7fr;
+    grid-template-rows: 0.5fr 1.6fr 0.9fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "Social-Media Logo Log-In" "Nav-bar Records ." "Nav-bar News ." "Nav-bar Site-Updates .";
+  }
+  
+  .Logo { grid-area: Logo; }
+  
+  .Records { grid-area: Records; }
+  
+  .News { grid-area: News; }
+  
+  .Site-Updates { grid-area: Site-Updates; }
+  
+  .Log-In { grid-area: Log-In; }
+  
+  .Nav-bar { grid-area: Nav-bar; }
+  
+  .Social-Media { grid-area: Social-Media; }
+
+/* Nav Bar */
+.navigation {
+    width: 50%;
+  }
+  
+  .mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  .mainmenu a {
+    display: block;
+    background-color: #0DB043;
+    text-decoration: none;
+    border: 2px solid black; 
+    padding: 10px;
+    color: black;
+  }
+  
+  .mainmenu a:hover {
+      background-color: green;
+  }
+  
+  .mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+  }
+  
+  .submenu a {
+    background-color: green;
+  }
+  
+  .submenu a:hover {
+    background-color: green;
+  }
+  
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+  }
