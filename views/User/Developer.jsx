@@ -1,12 +1,11 @@
 const React = require('react');
 const Default = require('../Components/Default.jsx');
 
-class Edit extends React.Component {
+class Developer extends React.Component {
     render() {
-        const record = this.props.StarterInfo;
         return (
             <Default>
-            <div>            <div>
+            <div>
             <div className="grid-container">
                 {/* Logo */}
                 <div className="Log-Placeholder">
@@ -26,6 +25,11 @@ class Edit extends React.Component {
                                 <br /><br />
                                 <a href="#">Forgot Password</a>
                             </form>
+                        </div>
+                        <div>
+                        <h1> The Creator of HerpKeeper</h1>
+                        <p>Lillian Parker, a zookeeper turned Software Engineer graduated from West Texas A&M University with a Bachelors of Science in Wildlife Biology. With a degree and a passion for herpetofauna by her side, she began working at at an Aquarium in the reptile department, and rose through the ranks quickly until she was promoted to a Lead. From there she and her team revolutionized the department and all the herpetofauna within their care.</p>
+                        <p>Wanting to increase her knowledge of husbandry for a variety of taxa, Lillian moved up to North Dakota to become part of the Dakota Zoo and helped the team there care for the variety of animals within the Dakota Zoo that included felids, canids, ursids, and a variety of exotic hoofstock. After experiencing mammals and birds, Lillian finalized her true passion was for herpetofauna, particularly the underappreciated species, and with an idea in mind, and newfound knowledge of software engineering, she set out to make HerpKeeper for those who maintain collections of Herpetofauna and have found that pen, paper, and water don't mix.</p>
                         </div>
                         {/* Nav Bar */}
                         <div className="Nav-bar">
@@ -51,15 +55,9 @@ class Edit extends React.Component {
                         </div>
                 </div>
             </div>
-                <h1>Show Record: {record.species}</h1>
-                <p>Testing more testing</p>
-                <form action={`/${record._id}?_method=DELETE`} method="POST">
-                <input className="delete" type="submit" value="Delete Record?"/>
-                </form>
-            </div>
         </Default>
         )
     }
 }
 
-module.exports = Show;
+module.exports = Developer;

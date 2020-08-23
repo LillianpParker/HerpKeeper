@@ -7,12 +7,21 @@ const Records = StarterInfo.BasicInfoModel
 //Index
 app.get('/', (req, res) => {
     Records.find({}, (error, allStarterInfo) => {
-    console.log(error)
         res.render('User/Index', {
             StarterInfo: allStarterInfo
         })
     });
 })
+
+//Developer Window
+app.get('/Site', (req, res) => {
+    res.render('User/Site');
+});
+
+//Site Window
+app.get('/Developer', (req, res) => {
+    res.render('User/Developer');
+});
 
 //New 
 app.get('/new', (req, res)=>{

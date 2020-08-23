@@ -1,59 +1,80 @@
 const React = require('react');
 const Default = require('../Components/Default.jsx');
-// const Information = this.props.Information;
 
 class Index extends React.Component {
     render() {
-        const {name, species, color, proven } = this.props.StarterInfo;
         return (
             <Default>
-            <div>
-                {this.props.StarterInfo.map((record, i) => {
-                    return (
-                        <div class="grid-container">
+                <div>
+                    <div className="grid-container">
+                        {/* Logo */}
                         <div className="Log-Placeholder">
                             <img className="Logo" src="https://i.imgur.com/RxOMcaH.png"></img>
                         </div>
-                        <div className="Records">
+                        <div className="Records newInfo"><br/>
                             <h1>Records</h1>
-                            <p>keh keh keh</p>
-                            <a href="/new">New Record</a>
+                            <div className="cardTiles">
+                            {this.props.StarterInfo.map((record, i) => {
+                                return (
+                                    <div class="card">
+                                    <a href={ `/${record._id}/edit`}>
+                                        <img className="cardImg" src={record.img} />
+                                        </a>
+                                        <div class="container">
+                                            <h4>{record.name} - {record.species}</h4>
+                                            <p>{record.order}</p>
+                                        </div>
+                                    </div>
+                            )})}
+                            </div>
                         </div>
+                        {/* News */}
                         <div className="News">
                             <p>Bleh bleh bleh</p>
                         </div>
+                        {/* Updates */}
                         <div className="Site-Updates">
                             <p>blelelop</p>
                         </div>
+                        {/* Log In */}
                         <div className="Log-In">
-                            <p>fancy fancy if it works</p>
+                            <form id="login" method="get" action="login.php">
+                                <label>User Name</label><br/>
+                                <input type="text" name="Uname" id="Uname" placeholder="Username" />
+                                <br /><br />
+                                <label>Password</label><br/>
+                                <input type="Password" name="Pass" id="Pass" placeholder="Password" />
+                                <br /><br />
+                                <input type="checkbox" id="check" />
+                                <span>Remember me</span>
+                                <br /><br />
+                                <a href="#">Forgot Password</a>
+                            </form>
                         </div>
+                        {/* Nav Bar */}
                         <div className="Nav-bar">
-                        <nav class="navigation">
-  <ul class="mainmenu">
-    <li><a href="">Home</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Products</a>
-      <ul class="submenu">
-        <li><a href="">Tops</a></li>
-        <li><a href="">Bottoms</a></li>
-        <li><a href="">Footwear</a></li>
-      </ul>
-    </li>
-    <li><a href="">Contact us</a></li>
-  </ul>
-</nav>
+                            <nav className="navigation">
+                                <ul className="mainmenu">
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/new">New Record</a></li>
+                                    <li><a>About HerpKeeper</a>
+                                        <ul className="submenu">
+                                            <li><a href="/Site">About the Site</a></li>
+                                            <li><a href="/Developer">About the Developer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Resources</a></li>
+                                </ul>
+                            </nav>
                         </div>
+                        {/* Social Media */}
                         <div className="Social-Media">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-twitter"></a>
                         </div>
-                        </div>
-                        )
-                    })
-                }
-            </div>
+                    </div>
+                </div>
             </Default>
         )
     }

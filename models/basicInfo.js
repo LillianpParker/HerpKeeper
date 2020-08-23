@@ -4,6 +4,7 @@ const Orders = ["Anura (Frogs and Toads)", "Caudata (Salamanders)", "Gymnophiona
 
 const basicInfoSchema = new mongoose.Schema({
     order: { type: String, values: Orders, required: true},
+    img:  { type: String, required: true },
     name:  { type: String, required: true },
     species:  { type: String, required: true },
     color:  { type: String, required: true },

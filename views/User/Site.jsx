@@ -1,12 +1,11 @@
 const React = require('react');
 const Default = require('../Components/Default.jsx');
 
-class Edit extends React.Component {
+class Site extends React.Component {
     render() {
-        const record = this.props.StarterInfo;
         return (
             <Default>
-            <div>            <div>
+            <div>
             <div className="grid-container">
                 {/* Logo */}
                 <div className="Log-Placeholder">
@@ -51,15 +50,9 @@ class Edit extends React.Component {
                         </div>
                 </div>
             </div>
-                <h1>Show Record: {record.species}</h1>
-                <p>Testing more testing</p>
-                <form action={`/${record._id}?_method=DELETE`} method="POST">
-                <input className="delete" type="submit" value="Delete Record?"/>
-                </form>
-            </div>
         </Default>
         )
     }
 }
 
-module.exports = Show;
+module.exports = Site;
