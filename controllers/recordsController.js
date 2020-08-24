@@ -5,7 +5,7 @@ const Records = StarterInfo.BasicInfoModel
 
 //Routes Begin
 //Index
-app.get('/herp-keeper', (req, res) => {
+app.get('/', (req, res) => {
     Records.find({}, (error, allStarterInfo) => {
         res.render('User/Index', {
             StarterInfo: allStarterInfo
@@ -31,21 +31,21 @@ app.get('/new', (req, res)=>{
 });
 
 // Delete
-app.delete('/herp-keeper/:id', (req, res) => {
+app.delete('/:id', (req, res) => {
     Records.findByIdAndRemove(req.params.id, (err, StarterInfo) => {
         res.redirect('/');
     });
 });
 
 // Update/Put
-app.put('/herp-keeper/:id', (req, res) => {
+app.put('/:id', (req, res) => {
     Records.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedModel) => {
         res.redirect('/');
     });
 });
 
 // Create
-app.post('/herp-keeper', (req, res) => {
+app.post('/', (req, res) => {
     req.body.proven = req.body.proven === 'on'
     Records.create(req.body, (error, createdRecord) => {
         console.log(error)
@@ -54,7 +54,7 @@ app.post('/herp-keeper', (req, res) => {
 });
 
 // Edit 
-app.get('/herp-keeper/:id/edit', (req, res) => {
+app.get('/:id/edit', (req, res) => {
     Records.findById(req.params.id, (err, foundStarterInfo) => {
         res.render('User/Edit', {
             StarterInfo: foundStarterInfo
@@ -63,7 +63,7 @@ app.get('/herp-keeper/:id/edit', (req, res) => {
 });
 
 // Show
-app.get('/herp-keeper/:id', (req, res) => {
+app.get('/:id', (req, res) => {
     Records.findById(req.params.id, (error, foundStarterInfo) => {
         res.render('User/Show', {
             StarterInfo: foundStarterInfo
