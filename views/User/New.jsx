@@ -4,6 +4,7 @@ const Default = require('../Components/Default.jsx');
 class New extends React.Component {
     render() {
       const options = this.props.order
+      const sexes = this.props.sex
       return (
         <Default>
           <div>
@@ -37,6 +38,16 @@ class New extends React.Component {
                 options.map((option, i) => {
                   return(
                   <option>{option}</option>
+                  )
+                })
+                }
+                </select><br/>
+                <label className="newSexSelect">Sex:</label>
+                <select name="sex">
+              {
+                sexes.map((sex, i) => {
+                  return(
+                  <option>{sex}</option>
                   )
                 })
                 }

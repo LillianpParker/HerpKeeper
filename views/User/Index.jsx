@@ -6,13 +6,13 @@ class Index extends React.Component {
         return (
             <Default>
                 <div>
-                    <div className="grid-container">
+                    <div className="grid-container1">
                         {/* Logo */}
                         <div className="Log-Placeholder">
                             <img className="Logo" src="https://i.imgur.com/RxOMcaH.png"></img>
                         </div>
                         <div className="Records newInfo"><br/>
-                            <h1>Records</h1>
+                            <h1>Current Records</h1>
                             <div className="cardTiles">
                             {this.props.StarterInfo.map((record, i) => {
                                 return (
@@ -21,7 +21,7 @@ class Index extends React.Component {
                                         <img className="cardImg" src={record.img} />
                                         </a>
                                         <div class="container">
-                                            <h4>{record.name} - {record.species}</h4>
+                                            <h4>{record.name} - {record.species} : {record.sex}</h4>
                                             <p>{record.order}</p>
                                         </div>
                                     </div>

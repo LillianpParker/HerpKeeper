@@ -6,7 +6,7 @@ class Edit extends React.Component {
         const record = this.props.StarterInfo;
         return (
             <Default>
-            <div>            <div>
+            <div>
             <div className="grid-container">
                 {/* Logo */}
                 <div className="Log-Placeholder">
@@ -27,6 +27,21 @@ class Edit extends React.Component {
                                 <a href="#">Forgot Password</a>
                             </form>
                         </div>
+                    <div className="Records">
+                        <img className="EditImg" src={record.img}align="left"/>
+                        <form className="editBoxes" action="/" method="POST">
+                            Update Photo: <input type="img" name="img" defaultValue={record.photo}/><br/>
+                            Name or ID: <input type="text" name="name" defaultValue={record.name}/><br/>
+                            Species: <input type="text" name="species" defaultValue={record.species} /><br/>
+                            Sex: <input type="option" name="sex" defaultValue={record.sex} /><br/>
+                            Color or Morph: <input type="text" name="color" defaultValue={record.color}/><br/>
+                            Proven Individual: <input type="checkbox" name="proven" defaultValue={record.proven}/><br/>
+                            <input className="submit" type="submit" name="" value="Update Record"/><br/>
+                        </form>
+                        <form action={`/${record._id}?_method=DELETE`} method="POST">
+                        <input className="delete" type="submit" value="Delete Record?"/>
+                        </form>
+                    </div>
                         {/* Nav Bar */}
                         <div className="Nav-bar">
                             <nav className="navigation">
@@ -51,15 +66,9 @@ class Edit extends React.Component {
                         </div>
                 </div>
             </div>
-                <h1>Show Record: {record.species}</h1>
-                <p>Testing more testing</p>
-                <form action={`/${record._id}?_method=DELETE`} method="POST">
-                <input className="delete" type="submit" value="Delete Record?"/>
-                </form>
-            </div>
         </Default>
         )
     }
 }
 
-module.exports = Show;
+module.exports = Edit;

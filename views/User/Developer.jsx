@@ -6,7 +6,7 @@ class Developer extends React.Component {
         return (
             <Default>
             <div>
-            <div className="grid-container">
+            <div className="grid-container2">
                 {/* Logo */}
                 <div className="Log-Placeholder">
                             <img className="Logo" src="https://i.imgur.com/RxOMcaH.png"></img>
@@ -28,8 +28,14 @@ class Developer extends React.Component {
                         </div>
                         <div>
                         <h1> The Creator of HerpKeeper</h1>
-                        <p>Lillian Parker, a zookeeper turned Software Engineer graduated from West Texas A&M University with a Bachelors of Science in Wildlife Biology. With a degree and a passion for herpetofauna by her side, she began working at at an Aquarium in the reptile department, and rose through the ranks quickly until she was promoted to a Lead. From there she and her team revolutionized the department and all the herpetofauna within their care.</p>
-                        <p>Wanting to increase her knowledge of husbandry for a variety of taxa, Lillian moved up to North Dakota to become part of the Dakota Zoo and helped the team there care for the variety of animals within the Dakota Zoo that included felids, canids, ursids, and a variety of exotic hoofstock. After experiencing mammals and birds, Lillian finalized her true passion was for herpetofauna, particularly the underappreciated species, and with an idea in mind, and newfound knowledge of software engineering, she set out to make HerpKeeper for those who maintain collections of Herpetofauna and have found that pen, paper, and water don't mix.</p>
+                        <img className="Aq2" src="https://i.imgur.com/Qgu0MYu.jpg" align="left"/>
+                        <img className="Aq1"src="https://i.imgur.com/RKRwjpj.jpg" align="right"/>
+                        <p className="p1">Lillian Parker, a zookeeper turned Software Engineer graduated from West Texas A&M University with a Bachelors of Science in Wildlife Biology. With a degree and a passion for herpetofauna by her side, she began working at at an Aquarium in the reptile department, and rose through the ranks quickly until she was promoted to a Lead. From there she and her team revolutionized the department and all the herpetofauna within their care.</p>
+                        <img className="animal1" src="https://i.imgur.com/bllJcp9.jpg" align="center"/>
+                        <img className="z1" src="https://i.imgur.com/7CYx784.jpg" align="left"/>
+                        <img className="z2"src="https://i.imgur.com/mT6CSSA.jpg" align="right"/><p className="p2">Wanting to increase her knowledge of husbandry for a variety of taxa, Lillian moved up to North Dakota to become part of the Dakota Zoo and helped the team there care for the variety of animals within the Dakota Zoo that included felids, canids, ursids, and a variety of exotic hoofstock.</p>
+                        <img className="z3" src="https://i.imgur.com/Fxyk3SV.jpg" align="center"/>
+                        <p className="p3">After experiencing mammals and birds, Lillian finalized her true passion was for herpetofauna, particularly the underappreciated species, and with an idea in mind, and newfound knowledge of software engineering, she set out to make HerpKeeper for those who maintain collections of Herpetofauna and have found that pen, paper, and water don't mix.</p>
                         </div>
                         {/* Nav Bar */}
                         <div className="Nav-bar">

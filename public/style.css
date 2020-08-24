@@ -1,10 +1,24 @@
 body{
-    background-image:url("https://wallup.net/wp-content/uploads/2018/09/30/199516-nature-chameleons-artwork-reptiles.jpg");
-    background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.imgur.com/BULYXVU.jpg');
+    /* background-image:url(""); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 h1{
     font-family: 'Carter One', cursive;
     text-align: center;
+    color: #E3CFCA;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.EditImg{
+  height: auto;
+  width: 40%;
+  margin: 10px;
+}
+.editBoxes{
+  margin: 10px;
+  font-size: 20px;
+  padding: 3px;
 }
 /* Card Tiles */
 .card {
@@ -66,7 +80,7 @@ h1{
     padding: 0px;
 }
 /* GRID CSS */
-.grid-container {
+.grid-container1 {
     display: grid;
     grid-template-columns: 0.8fr 2.3fr 0.7fr;
     grid-template-rows: 0.5fr 1.6fr 0.9fr 1fr;
@@ -86,7 +100,7 @@ h1{
   .Log-In { grid-area: Log-In; 
   display: flex;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: center;
   }
   
   .Nav-bar { grid-area: Nav-bar; }
@@ -156,6 +170,7 @@ padding: 20px;
 label{  
 color: #0DB043;  
 font-size: 17px;  
+text-shadow: 1px 1px 1px black; 
 }  
 #Uname{  
 width: 100px;  
@@ -170,7 +185,6 @@ height: 30px;
 border: none;  
 border-radius: 3px;  
 padding-left: 8px;  
-  
 }  
 #log{  
 width: 300px;  
@@ -178,14 +192,100 @@ height: 30px;
 border: none;  
 border-radius: 17px;  
 padding-left: 7px;  
-color: #0DB043;  
-
-
+color: #0DB043; 
 }  
+
 span{  
-color: white;  
-font-size: 17px;  
+color: #0DB043;  
+font-size: 17px;
+text-shadow: 1px 1px 1px black  
 }  
 a{  
 text-decoration: none;
 }  
+
+.grid-container2 {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 0.8fr 2.3fr 0.7fr;
+  grid-template-rows: 0.25fr 1.6fr 0.9fr 1fr;
+  gap: 1px 1px;
+  margin: 0 0 10px;
+  grid-template-areas: "Social-Media Logo Log-In" "Nav-bar Developer-Info ." ". . ." ". . .";
+}
+
+.Logo { 
+  grid-area: Logo; 
+  height: 75%;
+  width: 75%}
+
+.Log-In { grid-area: Log-In; }
+
+.Social-Media { grid-area: Social-Media; }
+
+.Developer-Info { grid-area: Developer-Info; }
+
+.Nav-bar { grid-area: Nav-bar; }
+
+/* Developer Images */
+.Aq1{
+  height: 350px;
+  width: auto;
+  border-radius: 20px;
+  margin: 10px;
+}
+.Aq2{
+  height: 350px;
+  width: auto;
+  border-radius: 20px;
+  margin: 10px;
+}
+.z1{
+  height: 350px;
+  width: auto;
+  border-radius: 20px;
+  margin: 10px;
+}
+.z2{
+  height: 350px;
+  width: auto;
+  border-radius: 20px;
+  margin: 10px;
+}
+.z3{
+  display: block;
+  height: 350px;
+  width: auto;
+  border-radius: 20px;
+  margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.animal1{
+  display: block;
+  height: 350px;
+  width: auto;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p1{
+  text-align: center;
+  font-size: 23px;
+  color: #E3CFCA;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.p2{
+  text-align: center;
+  font-size: 23px;
+  color: #E3CFCA;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.p3{
+  text-align: center;
+  font-size: 23px;
+  color: #E3CFCA;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
