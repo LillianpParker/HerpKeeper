@@ -6,7 +6,7 @@ class Site extends React.Component {
         return (
             <Default>
             <div>
-            <div className="grid-container">
+            <div className="grid-container2">
                 {/* Logo */}
                 <div className="Log-Placeholder">
                             <img className="Logo" src="https://i.imgur.com/RxOMcaH.png"></img>

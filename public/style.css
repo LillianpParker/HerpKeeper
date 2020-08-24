@@ -206,26 +206,21 @@ text-decoration: none;
 
 .grid-container2 {
   display: grid;
-  margin: 0;
-  grid-template-columns: 0.8fr 2.3fr 0.7fr;
-  grid-template-rows: 0.25fr 1.6fr;
+  grid-template-columns: 0.7fr 1.6fr 0.7fr;
+  grid-template-rows: 0.4fr 1.6fr;
   gap: 1px 1px;
-  margin: 0 0 10px;
-  grid-template-areas: "Social-Media Logo Log-In" "Nav-bar Developer-Info ." ". . ." ". . .";
+  grid-template-areas: "Social-Media Logo Log-In" "Nav-bar Site-Info .";
 }
-
-.Logo { 
-  grid-area: Logo; 
-  height: 68%;
-  width: 68%}
-
-.Log-In { grid-area: Log-In; }
 
 .Social-Media { grid-area: Social-Media; }
 
-.Developer-Info { grid-area: Developer-Info; }
+.Logo { grid-area: Logo; }
+
+.Log-In { grid-area: Log-In; }
 
 .Nav-bar { grid-area: Nav-bar; }
+
+.Site-Info { grid-area: Site-Info; }
 
 /* Developer Images */
 .Aq1{

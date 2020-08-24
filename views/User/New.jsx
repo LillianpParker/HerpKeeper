@@ -9,7 +9,7 @@ class New extends React.Component {
         <Default>
           <div>
           <div>
-            <div className="grid-container">
+            <div className="grid-container2">
                 {/* Logo */}
                 <div className="Log-Placeholder">
                             <img className="Logo" src="https://i.imgur.com/RxOMcaH.png"></img>
@@ -29,9 +29,9 @@ class New extends React.Component {
                                 <a href="#">Forgot Password</a>
                             </form>
                         </div>
-                        <div className="newInfo">
+                        <div className="newInfo Site-Info">
               <h1>New Record</h1>
-              <form action="/herp-keeper" method="POST">
+              <form action="/" method="POST">
                 <label className="newOrderSelect">Order:</label>
                 <select name="order">
               {
@@ -64,7 +64,7 @@ class New extends React.Component {
                         <div className="Nav-bar">
                             <nav className="navigation">
                                 <ul className="mainmenu">
-                                    <li><a href="/home">Home</a></li>
+                                    <li><a href="/">Home</a></li>
                                     <li><a href="/new">New Record</a></li>
                                     <li><a>About HerpKeeper</a>
                                         <ul className="submenu">

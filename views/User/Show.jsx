@@ -7,7 +7,7 @@ class Show extends React.Component {
         return (
             <Default>
 <div>
-            <div className="grid-container">
+            <div className="grid-container2">
                 {/* Logo */}
                 <div className="Log-Placeholder">
                             <img className="Logo" src="https://i.imgur.com/RxOMcaH.png"></img>
@@ -27,7 +27,7 @@ class Show extends React.Component {
                                 <a href="#">Forgot Password</a>
                             </form>
                         </div>
-                    <div className="Records">
+                    <div className="Site-Info">
                         <img src={records.img}/>
                         <h1>Record for {record.name}; {record.species}</h1>
                     </div>

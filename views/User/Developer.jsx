@@ -26,7 +26,7 @@ class Developer extends React.Component {
                                 <a href="#">Forgot Password</a>
                             </form>
                         </div>
-                        <div>
+                        <div className="Site-Info">
                         <h1> The Creator of HerpKeeper</h1>
                         <img className="Aq2" src="https://i.imgur.com/Qgu0MYu.jpg" align="left"/>
                         <img className="Aq1"src="https://i.imgur.com/RKRwjpj.jpg" align="right"/>
