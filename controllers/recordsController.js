@@ -5,7 +5,7 @@ const Records = StarterInfo.BasicInfoModel
 
 //Routes Begin
 //Index
-app.get('/herp-keeper', (req, res) => {
+app.get('/Home', (req, res) => {
     Records.find({}, (error, allStarterInfo) => {
         res.render('User/Index', {
             StarterInfo: allStarterInfo

@@ -30,7 +30,7 @@ class Site extends React.Component {
                         <div className="Nav-bar">
                             <nav className="navigation">
                                 <ul className="mainmenu">
-                                    <li><a href="/herp-keeper">Home</a></li>
+                                    <li><a href="/herp-keeper/home">Home</a></li>
                                     <li><a href="/herp-keeper/new">New Record</a></li>
                                     <li><a>About HerpKeeper</a>
                                         <ul className="submenu">
