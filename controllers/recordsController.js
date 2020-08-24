@@ -26,7 +26,8 @@ app.get('/Developer', (req, res) => {
 //New 
 app.get('/new', (req, res)=>{
     res.render('User/New', {
-        order: StarterInfo.Orders
+        order: StarterInfo.Orders,
+        sex: StarterInfo.Sex
     });
 });
 
