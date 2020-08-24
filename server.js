@@ -23,7 +23,7 @@ mongoose.connection.once('open', ()=> {
 
 //Controllers
 const recordsController = require('./controllers/recordsController.js');
-app.use('/herp-keeper', recordsController);
+app.use('/', recordsController);
 
 //Listener
 app.listen(PORT, ()=>{
