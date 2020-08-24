@@ -17,7 +17,7 @@ class Index extends React.Component {
                             {this.props.StarterInfo.map((record, i) => {
                                 return (
                                     <div class="card">
-                                    <a href={ `herp-keeper/${record._id}/edit`}>
+                                    <a href={ `/${record._id}/edit`}>
                                         <img className="cardImg" src={record.img} />
                                         </a>
                                         <div class="container">
@@ -55,12 +55,12 @@ class Index extends React.Component {
                         <div className="Nav-bar">
                             <nav className="navigation">
                                 <ul className="mainmenu">
-                                    <li><a href="/herp-keeper/home">Home</a></li>
-                                    <li><a href="/herp-keeper/new">New Record</a></li>
+                                    <li><a href="/home">Home</a></li>
+                                    <li><a href="/new">New Record</a></li>
                                     <li><a>About HerpKeeper</a>
                                         <ul className="submenu">
-                                            <li><a href="/herp-keeper/Site">About the Site</a></li>
-                                            <li><a href="/herp-keeper/Developer">About the Developer</a></li>
+                                            <li><a href="/Site">About the Site</a></li>
+                                            <li><a href="/Developer">About the Developer</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="">Resources</a></li>
