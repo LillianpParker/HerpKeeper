@@ -216,8 +216,8 @@ text-decoration: none;
 
 .Logo { 
   grid-area: Logo; 
-  height: 75%;
-  width: 75%}
+  height: 68%;
+  width: 68%}
 
 .Log-In { grid-area: Log-In; }
 
