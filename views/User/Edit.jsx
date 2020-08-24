@@ -46,12 +46,12 @@ class Edit extends React.Component {
                         <div className="Nav-bar">
                             <nav className="navigation">
                                 <ul className="mainmenu">
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="/new">New Record</a></li>
+                                    <li><a href="/herp-keeper">Home</a></li>
+                                    <li><a href="/herp-keeper/new">New Record</a></li>
                                     <li><a>About HerpKeeper</a>
                                         <ul className="submenu">
-                                            <li><a href="/Site">About the Site</a></li>
-                                            <li><a href="/Developer">About the Developer</a></li>
+                                            <li><a href="/herp-keeper/Site">About the Site</a></li>
+                                            <li><a href="/herp-keeper/Developer">About the Developer</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="">Resources</a></li>

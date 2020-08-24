@@ -31,21 +31,21 @@ app.get('/new', (req, res)=>{
 });
 
 // Delete
-app.delete('/:id', (req, res) => {
+app.delete('/herp-keeper/:id', (req, res) => {
     Records.findByIdAndRemove(req.params.id, (err, StarterInfo) => {
         res.redirect('/');
     });
 });
 
 // Update/Put
-app.put('/:id', (req, res) => {
+app.put('/herp-keeper/:id', (req, res) => {
     Records.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedModel) => {
         res.redirect('/');
     });
 });
 
 // Create
-app.post('/', (req, res) => {
+app.post('/herp-keeper', (req, res) => {
     req.body.proven = req.body.proven === 'on'
     Records.create(req.body, (error, createdRecord) => {
         console.log(error)
@@ -54,7 +54,7 @@ app.post('/', (req, res) => {
 });
 
 // Edit 
-app.get('/:id/edit', (req, res) => {
+app.get('/herp-keeper/:id/edit', (req, res) => {
     Records.findById(req.params.id, (err, foundStarterInfo) => {
         res.render('User/Edit', {
             StarterInfo: foundStarterInfo
@@ -63,7 +63,7 @@ app.get('/:id/edit', (req, res) => {
 });
 
 // Show
-app.get('/:id', (req, res) => {
+app.get('/herp-keeper/:id', (req, res) => {
     Records.findById(req.params.id, (error, foundStarterInfo) => {
         res.render('User/Show', {
             StarterInfo: foundStarterInfo
