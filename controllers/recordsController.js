@@ -34,14 +34,14 @@ app.get('/new', (req, res)=>{
 // Delete
 app.delete('/:id', (req, res) => {
     Records.findByIdAndRemove(req.params.id, (err, StarterInfo) => {
-        res.redirect('/');
+        res.redirect('/herp-keeper/home');
     });
 });
 
 // Update/Put
 app.put('/:id', (req, res) => {
     Records.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedModel) => {
-        res.redirect('/');
+        res.redirect('/herp-keeper/home');
     });
 });
 
@@ -50,12 +50,12 @@ app.post('/', (req, res) => {
     req.body.proven = req.body.proven === 'on'
     Records.create(req.body, (error, createdRecord) => {
         console.log(error)
-        res.redirect('/');
+        res.redirect('/herp-keeper/home');
     });
 });
 
 // Edit 
-app.get('/:id/edit', (req, res) => {
+app.get('/herp-keeper/:id/edit', (req, res) => {
     Records.findById(req.params.id, (err, foundStarterInfo) => {
         res.render('User/Edit', {
             StarterInfo: foundStarterInfo
