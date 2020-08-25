@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const StarterInfo = require('../models/basicInfo.js');
 const Records = StarterInfo.BasicInfoModel
+const drInfo = require('../models/basicInfo.js');
+const VetInfo = drInfo.VetInfoModel
+const snackInfo = require('../models/basicInfo.js')
+const FeedingInfo = snackInfo.FeedingInfoModel
 
 //Routes Begin
 //Index

@@ -28,6 +28,7 @@ class Edit extends React.Component {
                             </form>
                         </div>
                     <div className="Site-Info">
+                        <form className="AllForms">
                         <img className="EditImg" src={record.img}align="left"/>
                         <form className="editBoxes" action="/" method="POST">
                             Update Photo: <input type="img" name="img" defaultValue={record.photo}/><br/>
@@ -37,9 +38,26 @@ class Edit extends React.Component {
                             Color or Morph: <input type="text" name="color" defaultValue={record.color}/><br/>
                             Proven Individual: <input type="checkbox" name="proven" defaultValue={record.proven}/><br/>
                             <input className="submit" type="submit" name="" value="Update Record"/><br/>
+                        </form><br/>
+                        <form className="vetDocumentation" action={`/${record._id}`} method="POST">
+                            Recent Vet Visit: <input type="text" name="recentVisit"/>
+                            Bloodwork Done: <input type="checkbox" name="bloodworkPerformed"/>
+                            Bloodwork Shown: <input type="text" name="bloodworkShowed"/>
+                            Name of Illness: <input type="text" name="illness"/>
+                            Date Diagnosed: <input type="text" name="dateDiagnosed"/>
+                            Perscription: <input type="text" name="perscription"/>
+                            Illness still Active: <input type="checkbox" name="illnessStatus"/>
+                            <input className="submit" type="submit" name="" value="Update Feeding Record"/><br/>
+                        </form><br/>
+                        <form className="feedingSchedule" action={`/${record._id}/feedingInfo`} method="POST">
+                            Fed On: <input type="text" name="feedingDate"/>
+                            <input className="submit" type="submit" name="" value="Update Feeding Record"/><br/>
+                            Item Fed: <input type="text" name="feedingDate"/>
+                            Amount Fed: <input type="text" name="feedingAmount"/>
                         </form>
-                        <form action={`/${record._id}?_method=DELETE`} method="POST">
+                        <form action={`/${record._id}`} method="DELETE">
                         <input className="delete" type="submit" value="Delete Record?"/>
+                        </form>
                         </form>
                     </div>
                         {/* Nav Bar */}

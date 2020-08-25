@@ -29,10 +29,10 @@ class New extends React.Component {
                                 <a href="#">Forgot Password</a>
                             </form>
                         </div>
-                        <div className="newInfo Site-Info">
+                <div className="newInfo Site-Info">
               <h1>New Record</h1>
               <form action="/" method="POST">
-                <label className="newOrderSelect">Order:</label>
+                <label className="newOrderSelect Site-Info">Order:</label>
                 <select name="order">
               {
                 options.map((option, i) => {
@@ -42,7 +42,7 @@ class New extends React.Component {
                 })
                 }
                 </select><br/>
-                <label className="newSexSelect">Sex:</label>
+                <label className="newSexSelect Site-Info">Sex:</label>
                 <select name="sex">
               {
                 sexes.map((sex, i) => {
@@ -57,6 +57,7 @@ class New extends React.Component {
                 Species: <input type="text" name="species" /><br/>
                 Color or Morph: <input type="text" name="color" /><br/>
                 Proven Individual: <input type="checkbox" name="proven" /><br/>
+                Recent Vet Visit: <input type="text" name="recentVisit"/><br/>
                 <input className="submit" type="submit" name="" value="Create Record"/><br/>
                </form>
                </div>

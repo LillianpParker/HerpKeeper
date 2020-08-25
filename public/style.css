@@ -1,6 +1,5 @@
 body{
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.imgur.com/BULYXVU.jpg');
-    /* background-image:url(""); */
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -72,8 +71,8 @@ h1{
     margin: 5px;
   }
 .Logo{
-    height: 75%;
-    width: 75%;
+    height: 80%;
+    width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -83,7 +82,7 @@ h1{
 .grid-container1 {
     display: grid;
     grid-template-columns: 0.8fr 2.3fr 0.7fr;
-    grid-template-rows: 0.5fr 1.6fr 0.9fr 1fr;
+    grid-template-rows: 0.5fr 2f 0.9fr 1fr;
     gap: 1px 10x;
     grid-template-areas: "Social-Media Logo Log-In" "Nav-bar Records ." "Nav-bar News ." "Nav-bar Site-Updates .";
   }
@@ -221,6 +220,12 @@ text-decoration: none;
 .Nav-bar { grid-area: Nav-bar; }
 
 .Site-Info { grid-area: Site-Info; }
+
+
+.Site-Info{
+  color: #E3CFCA;
+  text-shadow: 1px 1px 1px black ; 
+}
 
 /* Developer Images */
 .Aq1{

@@ -3,10 +3,10 @@ const Default = require('../Components/Default.jsx');
 
 class Show extends React.Component {
     render() {
-        const { order, name, species, color, proven, img } = this.props.StarterInfo;
+        const record = this.props.StarterInfo;
         return (
             <Default>
-<div>
+            <div>
             <div className="grid-container2">
                 {/* Logo */}
                 <div className="Log-Placeholder">
@@ -28,8 +28,9 @@ class Show extends React.Component {
                             </form>
                         </div>
                     <div className="Site-Info">
-                        <img src={records.img}/>
+                        <img src={record.img}/>
                         <h1>Record for {record.name}; {record.species}</h1>
+                        <a href={`/${record._id}/edit`}>Edit Record</a>
                     </div>
                         {/* Nav Bar */}
                         <div className="Nav-bar">

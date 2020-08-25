@@ -17,7 +17,7 @@ class Index extends React.Component {
                             {this.props.StarterInfo.map((record, i) => {
                                 return (
                                     <div class="card">
-                                    <a href={ `/${record._id}/edit`}>
+                                    <a href={ `/${record._id}`}>
                                         <img className="cardImg" src={record.img} />
                                         </a>
                                         <div class="container">
