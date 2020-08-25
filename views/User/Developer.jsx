@@ -23,7 +23,7 @@ class Developer extends React.Component {
                                 <input type="checkbox" id="check" />
                                 <span>Remember me</span>
                                 <br /><br />
-                                <a href="#">Forgot Password</a>
+                                <a className="forgotPass" href="#">Forgot Password</a>
                             </form>
                         </div>
                         <div className="Site-Info">
@@ -49,7 +49,7 @@ class Developer extends React.Component {
                                             <li><a href="/Developer">About the Developer</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="">Resources</a></li>
+                                    <li><a href="/Resources">Resources</a></li>
                                 </ul>
                             </nav>
                         </div>

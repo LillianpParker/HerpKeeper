@@ -9,6 +9,22 @@ h1{
     color: #E3CFCA;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+.siteLi{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20px;
+}
+a{
+  color: #E3CFCA;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20px;
+  text-align: center;
+}
+.resource{
+  text-align: center;
+  font-size: 21px;
+  color: #E3CFCA;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .EditImg{
   height: auto;
   width: 40%;
@@ -125,6 +141,7 @@ h1{
     border: 2px solid black; 
     padding: 10px;
     color: black;
+    font-size: 20px;
   }
   
   .mainmenu a:hover {
@@ -199,8 +216,10 @@ color: #0DB043;
 font-size: 17px;
 text-shadow: 1px 1px 1px black  
 }  
-a{  
-text-decoration: none;
+.forgotPass{  
+  color: black;
+  text-shadow: 1px 1px 1px #0DB043; 
+  text-decoration: none;
 }  
 
 .grid-container2 {
@@ -273,13 +292,13 @@ text-decoration: none;
 
 .p1{
   text-align: center;
-  font-size: 23px;
+  font-size: 21px;
   color: #E3CFCA;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .p2{
   text-align: center;
-  font-size: 23px;
+  font-size: 21px;
   color: #E3CFCA;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -288,4 +307,10 @@ text-decoration: none;
   font-size: 23px;
   color: #E3CFCA;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+p{
+  font-size: 20px;
+  color: #E3CFCA;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
 }

@@ -23,8 +23,18 @@ class Site extends React.Component {
                                 <input type="checkbox" id="check" />
                                 <span>Remember me</span>
                                 <br /><br />
-                                <a href="#">Forgot Password</a>
+                                <a className="forgotPass" href="#">Forgot Password</a>
                             </form>
+                        </div>
+                        <div className="Site-Info">
+                            <h1>Behind the scenes of HerpKeeper</h1>
+                            <p className="pColor">HerpKeeper is an online directory for keepers to maintain records of the herpetofauna within their collections. Every herp keeper has lost parts of a record here and there to water stains, blood, invertebrate mess, or worse enough, musk. And so, a keeper turned software engineer turned a fleeting thought into a reality. From vet records to feeding schedules, HerpKeeper has the ability to keep your records away from the soiling and mess that some herps decide to bestow upon you, and in a less messy place.</p>
+                            <h1>Upcoming Updates</h1>
+                            <ul>
+                                <li className="siteLi">Login verification and encryption</li>
+                                <li className="siteLi">Calendar schedules for feeding, defecating, and medicating</li>
+                                <li className="siteLi">Referencing records by order</li>
+                            </ul>
                         </div>
                         {/* Nav Bar */}
                         <div className="Nav-bar">
@@ -38,7 +48,7 @@ class Site extends React.Component {
                                             <li><a href="/Developer">About the Developer</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="">Resources</a></li>
+                                    <li><a href="/Resources">Resources</a></li>
                                 </ul>
                             </nav>
                         </div>

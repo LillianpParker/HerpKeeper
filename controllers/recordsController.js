@@ -27,6 +27,11 @@ app.get('/Developer', (req, res) => {
     res.render('User/Developer');
 });
 
+//Resources
+app.get('/Resources', (req, res) => {
+    res.render('User/Resources');
+});
+
 //New 
 app.get('/new', (req, res)=>{
     res.render('User/New', {

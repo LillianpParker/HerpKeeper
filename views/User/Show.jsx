@@ -4,6 +4,8 @@ const Default = require('../Components/Default.jsx');
 class Show extends React.Component {
     render() {
         const record = this.props.StarterInfo;
+        const vet = this.props.drInfo;
+        const feed = this.props.snackInfo
         return (
             <Default>
             <div>
@@ -24,12 +26,13 @@ class Show extends React.Component {
                                 <input type="checkbox" id="check" />
                                 <span>Remember me</span>
                                 <br /><br />
-                                <a href="#">Forgot Password</a>
+                                <a className="forgotPass" href="#">Forgot Password</a>
                             </form>
                         </div>
                     <div className="Site-Info">
                         <img src={record.img}/>
-                        <h1>Record for {record.name}; {record.species}</h1>
+                        <h1>Record for {record.name}; {record.species} : {record.order}</h1>
+                            <p>{vet.recentVisit}</p>
                         <a href={`/${record._id}/edit`}>Edit Record</a>
                     </div>
                         {/* Nav Bar */}
@@ -44,7 +47,7 @@ class Show extends React.Component {
                                             <li><a href="/Developer">About the Developer</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="">Resources</a></li>
+                                    <li><a href="/Resources">Resources</a></li>
                                 </ul>
                             </nav>
                         </div>

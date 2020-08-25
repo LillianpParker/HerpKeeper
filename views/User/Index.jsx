@@ -22,7 +22,7 @@ class Index extends React.Component {
                                         </a>
                                         <div class="container">
                                             <h4>{record.name} - {record.species} : {record.sex}</h4>
-                                            <p>{record.order}</p>
+                                            <h5>{record.order}</h5>
                                         </div>
                                     </div>
                             )})}
@@ -30,11 +30,12 @@ class Index extends React.Component {
                         </div>
                         {/* News */}
                         <div className="News">
-                            <p>Bleh bleh bleh</p>
+                            <p className="pColor">Bleh bleh bleh</p>
                         </div>
                         {/* Updates */}
                         <div className="Site-Updates">
-                            <p>blelelop</p>
+                            <h1>August 26, 2020</h1>
+                            <p className="p1">Site is officially life: Welcome to HerpKeeper 1.0</p>
                         </div>
                         {/* Log In */}
                         <div className="Log-In">
@@ -48,7 +49,7 @@ class Index extends React.Component {
                                 <input type="checkbox" id="check" />
                                 <span>Remember me</span>
                                 <br /><br />
-                                <a href="#">Forgot Password</a>
+                                <a className="forgotPass" href="#">Forgot Password</a>
                             </form>
                         </div>
                         {/* Nav Bar */}
@@ -63,7 +64,7 @@ class Index extends React.Component {
                                             <li><a href="/Developer">About the Developer</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="">Resources</a></li>
+                                    <li><a href="/Resources">Resources</a></li>
                                 </ul>
                             </nav>
                         </div>

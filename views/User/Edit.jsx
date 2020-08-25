@@ -24,7 +24,7 @@ class Edit extends React.Component {
                                 <input type="checkbox" id="check" />
                                 <span>Remember me</span>
                                 <br /><br />
-                                <a href="#">Forgot Password</a>
+                                <a className="forgotPass" href="#">Forgot Password</a>
                             </form>
                         </div>
                     <div className="Site-Info">
@@ -47,7 +47,7 @@ class Edit extends React.Component {
                             Date Diagnosed: <input type="text" name="dateDiagnosed"/>
                             Perscription: <input type="text" name="perscription"/>
                             Illness still Active: <input type="checkbox" name="illnessStatus"/>
-                            <input className="submit" type="submit" name="" value="Update Feeding Record"/><br/>
+                            <input className="submit" type="submit" name="" value="Update Vet Record"/><br/>
                         </form><br/>
                         <form className="feedingSchedule" action={`/${record._id}/feedingInfo`} method="POST">
                             Fed On: <input type="text" name="feedingDate"/>
@@ -72,7 +72,7 @@ class Edit extends React.Component {
                                             <li><a href="/Developer">About the Developer</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="">Resources</a></li>
+                                    <li><a href="/Resources">Resources</a></li>
                                 </ul>
                             </nav>
                         </div>
