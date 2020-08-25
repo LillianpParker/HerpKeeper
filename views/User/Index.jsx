@@ -30,11 +30,15 @@ class Index extends React.Component {
                         </div>
                         {/* News */}
                         <div className="News">
-                            <p className="pColor">Bleh bleh bleh</p>
+                        <hr></hr>
+                        <h1>St. Augestine Alligator Farm and Zoological Park Livestream below that focuses on their American Alligators, Roseate Spoonbill, and other wading birds</h1>
+                        <iframe width="590" height="332" src="https://www.youtube.com/embed/EnxRJii_dp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         {/* Updates */}
                         <div className="Site-Updates">
-                            <h1>August 26, 2020</h1>
+                        <hr></hr>
+                            <h1>HerpKeeper Updates</h1>
+                            <h2>August 26, 2020</h2>
                             <p className="p1">Site is officially life: Welcome to HerpKeeper 1.0</p>
                         </div>
                         {/* Log In */}

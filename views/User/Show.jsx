@@ -30,9 +30,9 @@ class Show extends React.Component {
                             </form>
                         </div>
                     <div className="Site-Info">
-                        <img src={record.img}/>
+                        <img className="ShowImg"src={record.img}/>
                         <h1>Record for {record.name}; {record.species} : {record.order}</h1>
-                            <p>{vet.recentVisit}</p>
+                            {/* <p>{vet.recentVisit}</p> */}
                         <a href={`/${record._id}/edit`}>Edit Record</a>
                     </div>
                         {/* Nav Bar */}

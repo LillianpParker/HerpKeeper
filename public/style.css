@@ -10,12 +10,14 @@ h1{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .siteLi{
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 20px;
 }
+iframe{
+  position: relative;
+  left: 15%;
+}
 a{
-  color: #E3CFCA;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
   font-size: 20px;
   text-align: center;
 }
@@ -26,14 +28,18 @@ a{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .EditImg{
-  height: auto;
-  width: 40%;
+  height: 40%;
+  width: 50%;
   margin: 10px;
 }
 .editBoxes{
   margin: 10px;
   font-size: 20px;
   padding: 3px;
+}
+.ShowImg{
+  width: 60%;
+  margin: 10px;
 }
 /* Card Tiles */
 .card {
@@ -180,8 +186,10 @@ a{
 }  
 h2{  
 text-align: center;  
-color: #277582;  
-padding: 20px;  
+color: #E3CFCA;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+text-decoration: underline;
+padding: 3px;  
 }  
 label{  
 color: #0DB043;  
@@ -210,6 +218,11 @@ border-radius: 17px;
 padding-left: 7px;  
 color: #0DB043; 
 }  
+input{
+  padding: 5px;
+  font-size: 15px;
+  margin: 10px;
+}
 
 span{  
 color: #0DB043;  

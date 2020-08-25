@@ -57,7 +57,6 @@ class New extends React.Component {
                 Species: <input type="text" name="species" /><br/>
                 Color or Morph: <input type="text" name="color" /><br/>
                 Proven Individual: <input type="checkbox" name="proven" /><br/>
-                Recent Vet Visit: <input type="text" name="recentVisit"/><br/>
                 <input className="submit" type="submit" name="" value="Create Record"/><br/>
                </form>
                </div>

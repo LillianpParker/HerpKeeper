@@ -41,7 +41,7 @@ class Developer extends React.Component {
                         <div className="Nav-bar">
                             <nav className="navigation">
                                 <ul className="mainmenu">
-                                    <li><a href="/">Home</a></li>
+                                    <li><a className="" href="/">Home</a></li>
                                     <li><a href="/new">New Record</a></li>
                                     <li><a>About HerpKeeper</a>
                                         <ul className="submenu">

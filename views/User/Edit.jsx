@@ -28,6 +28,7 @@ class Edit extends React.Component {
                             </form>
                         </div>
                     <div className="Site-Info">
+                        <h1>Editing Record: {record.name}, {record.species}, {record.order}</h1>
                         <form className="AllForms">
                         <img className="EditImg" src={record.img}align="left"/>
                         <form className="editBoxes" action="/" method="POST">
@@ -39,6 +40,7 @@ class Edit extends React.Component {
                             Proven Individual: <input type="checkbox" name="proven" defaultValue={record.proven}/><br/>
                             <input className="submit" type="submit" name="" value="Update Record"/><br/>
                         </form><br/>
+                        <hr></hr>
                         <form className="vetDocumentation" action={`/${record._id}`} method="POST">
                             Recent Vet Visit: <input type="text" name="recentVisit"/>
                             Bloodwork Done: <input type="checkbox" name="bloodworkPerformed"/>
@@ -49,6 +51,7 @@ class Edit extends React.Component {
                             Illness still Active: <input type="checkbox" name="illnessStatus"/>
                             <input className="submit" type="submit" name="" value="Update Vet Record"/><br/>
                         </form><br/>
+                        <hr></hr>
                         <form className="feedingSchedule" action={`/${record._id}/feedingInfo`} method="POST">
                             Fed On: <input type="text" name="feedingDate"/>
                             <input className="submit" type="submit" name="" value="Update Feeding Record"/><br/>
