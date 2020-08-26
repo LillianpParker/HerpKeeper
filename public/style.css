@@ -52,7 +52,6 @@ a{
   font-size: 25 px;
   text-align: center;
   margin: 0px 20px 20px 20px;
-  
 }
 
 .cardTiles{
@@ -182,20 +181,22 @@ a{
     padding: 80px;  
     background: #23463f;  
     border-radius: 15px ;  
-      
 }  
 h2{  
 text-align: center;  
 color: #E3CFCA;
 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-text-decoration: underline;
 padding: 3px;  
 }  
 label{  
 color: #0DB043;  
-font-size: 17px;  
+font-size: 20px;  
 text-shadow: 1px 1px 1px black; 
 }  
+form{
+  font-size: 20px;
+  text-align: center;
+}
 #Uname{  
 width: 100px;  
 height: 30px;  
@@ -223,7 +224,6 @@ input{
   font-size: 15px;
   margin: 10px;
 }
-
 span{  
 color: #0DB043;  
 font-size: 17px;
@@ -257,6 +257,12 @@ text-shadow: 1px 1px 1px black
 .Site-Info{
   color: #E3CFCA;
   text-shadow: 1px 1px 1px black ; 
+}
+.newSelect{
+  margin-top: 15px;
+  margin-left: 15px;
+  font: 20px;
+  padding: 5px;
 }
 
 /* Developer Images */

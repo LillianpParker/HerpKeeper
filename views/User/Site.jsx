@@ -33,7 +33,7 @@ class Site extends React.Component {
                             <ul>
                                 <li className="siteLi">Login verification and encryption</li>
                                 <li className="siteLi">Calendar schedules for feeding, defecating, and medicating</li>
-                                <li className="siteLi">Referencing records by order</li>
+                                <li className="siteLi">Referencing records for easier locating</li>
                             </ul>
                         </div>
                         {/* Nav Bar */}

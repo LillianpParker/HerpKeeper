@@ -19,21 +19,28 @@ const BasicInfo = mongoose.model('BasicInfo', basicInfoSchema);
 
 const vetInfoSchema = new mongoose.Schema ({
     animalId: {type: mongoose.Schema.Types.ObjectId, required: true},
-    recentVisit: {type: String, required: false},
-    bloodworkPerformed: {type: Boolean, required: false},
-    bloodworkShowed: {type: String, required: false},
-    illness: {type: String, required: false},
-    dateDiagnosed: {type: String, required: false},
-    perscription: {type: String, required: false},  
-    illnessStatus: {type: Boolean, required: false},
+    vetOffice: {type: String},
+    vetNumber: {type: String},
+    vetName: {type: String},
+    recentVisit: {type: String},
+    bloodworkPerformed: {type: Boolean},
+    bloodworkShowed: {type: String},
+    healthy: {type: Boolean},
+    illness: {type: String},
+    dateDiagnosed: {type: String},
+    perscription: {type: String},  
+    illnessStatus: {type: Boolean},
 });
 const vetInfo = mongoose.model('VetInfo', vetInfoSchema)
 
 const feedingSchema = new mongoose.Schema({
     animalId: {type: mongoose.Schema.Types.ObjectId, required: true},
-    feedingDate: {type: String, required: false},
-    feedingItem: {type: String, required: false},
-    feedingAmount: {type: String}
+    supplier: {type: String},
+    feedingDate: {type: String},
+    feedingItem: {type: String},
+    feedingAmount: {type: String},
+    excretion: {type: String},
+
 })
 
 const feedingInfo = mongoose.model('FeedingInfo', feedingSchema)

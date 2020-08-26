@@ -33,15 +33,15 @@ app.get('/Resources', (req, res) => {
 });
 
 //New 
-app.get('/new', (req, res)=>{
+app.get('/new', (req, res) => {
     res.render('User/New', {
         order: StarterInfo.Orders,
-        sex: StarterInfo.Sex
+        sex: StarterInfo.Sex,
     });
 });
 
 // Delete
-app.delete('/:id', (req, res) => {
+app.post('/:id/delete', (req, res) => {
     Records.findByIdAndRemove(req.params.id, (err, StarterInfo) => {
         res.redirect('/');
     });
@@ -53,6 +53,26 @@ app.put('/:id', (req, res) => {
         res.redirect('/');
     });
 });
+
+//Vet Info Route
+app.post('/:id/vetInfo', (req, res) => {
+    req.body.healthy = req.body.healthy === 'on'
+    req.body.bloodworkPerformed = req.body.bloodworkPerformed === 'on'
+    req.body.animalId = req.params.id
+    VetInfo.create(req.body, (error, createdVetInfo) => {
+        console.log(error)
+        res.redirect(`/${req.body.animalId}`);
+    });
+})
+
+//Feeding Info Route
+app.post('/:id/feedInfo', (req, res) => {
+    req.body.animalId = req.params.id
+    FeedingInfo.create(req.body, (error, createdFeedingInfo) => {
+        console.log(error)
+        res.redirect(`/${req.body.animalId}`);
+    });
+})
 
 // Create
 app.post('/', (req, res) => {
@@ -75,8 +95,16 @@ app.get('/:id/edit', (req, res) => {
 // Show
 app.get('/:id', (req, res) => {
     Records.findById(req.params.id, (error, foundStarterInfo) => {
-        res.render('User/Show', {
-            StarterInfo: foundStarterInfo
+        VetInfo.find({ animalId: req.params.id }, (error, foundVetInfo) => {
+            console.log(foundVetInfo)
+            FeedingInfo.find({ animalId: req.params.id }, (error, foundFeedingInfo) => {
+                console.log(foundFeedingInfo)
+                res.render('User/Show', {
+                    StarterInfo: foundStarterInfo,
+                    VetInfo: foundVetInfo,
+                    FeedingInfo: foundFeedingInfo
+                });
+            });
         });
     });
 });

@@ -37,28 +37,36 @@ class Edit extends React.Component {
                             Species: <input type="text" name="species" defaultValue={record.species} /><br/>
                             Sex: <input type="option" name="sex" defaultValue={record.sex} /><br/>
                             Color or Morph: <input type="text" name="color" defaultValue={record.color}/><br/>
+                            Markings: <input type="text" name="markings" defaultValue={record.markings}/><br/>
+                            Origin: <input type="text" name="origin" defaultValue={record.markings}/><br/>
                             Proven Individual: <input type="checkbox" name="proven" defaultValue={record.proven}/><br/>
                             <input className="submit" type="submit" name="" value="Update Record"/><br/>
                         </form><br/>
                         <hr></hr>
-                        <form className="vetDocumentation" action={`/${record._id}`} method="POST">
-                            Recent Vet Visit: <input type="text" name="recentVisit"/>
-                            Bloodwork Done: <input type="checkbox" name="bloodworkPerformed"/>
-                            Bloodwork Shown: <input type="text" name="bloodworkShowed"/>
-                            Name of Illness: <input type="text" name="illness"/>
-                            Date Diagnosed: <input type="text" name="dateDiagnosed"/>
-                            Perscription: <input type="text" name="perscription"/>
-                            Illness still Active: <input type="checkbox" name="illnessStatus"/>
-                            <input className="submit" type="submit" name="" value="Update Vet Record"/><br/>
+                        <form className="vetDocumentation" action={`/${record._id}/vetInfo`} method="POST">
+                            Vet Office: <input type="text" name="vetOffice"/><br/>
+                            Vet Phone Number: <input type="text" name="vetNumber"/><br/>
+                            Name of Vet: <input type="text" name="vetName"/><br/>
+                            Recent Vet Visit: <input type="text" name="recentVisit"/><br/>
+                            Bloodwork Done: <input type="checkbox" name="bloodworkPerformed"/><br/>
+                            Bloodwork Shown: <input type="text" name="bloodworkShowed"/><br/>
+                            Healthy: <input type="checkbox" name="healthy"/><br/>
+                            Name of Illness: <input type="text" name="illness"/><br/>
+                            Date Diagnosed: <input type="text" name="dateDiagnosed"/><br/>
+                            Perscription: <input type="text" name="perscription"/><br/>
+                            Illness still Active: <input type="checkbox" name="illnessStatus"/><br/>
+                            <input className="submit" type="submit" name="" value="Update Vet Record"/><br/><br/>
                         </form><br/>
                         <hr></hr>
-                        <form className="feedingSchedule" action={`/${record._id}/feedingInfo`} method="POST">
-                            Fed On: <input type="text" name="feedingDate"/>
+                        <form className="feedingSchedule" action={`/${record._id}/feedInfo`} method="POST">
+                            Food Supplier: <input type="text" name="supplier"/><br/>
+                            Fed On: <input type="text" name="feedingDate"/><br/>
+                            Item Fed: <input type="text" name="feedingItem"/><br/>
+                            Amount Fed: <input type="text" name="feedingAmount"/><br/>
+                            Excretion: <input type="text" name="excretion"/><br/>
                             <input className="submit" type="submit" name="" value="Update Feeding Record"/><br/>
-                            Item Fed: <input type="text" name="feedingDate"/>
-                            Amount Fed: <input type="text" name="feedingAmount"/>
-                        </form>
-                        <form action={`/${record._id}`} method="DELETE">
+                        </form><br/>
+                        <form action={`/${record._id}/delete`} method="POST">
                         <input className="delete" type="submit" value="Delete Record?"/>
                         </form>
                         </form>

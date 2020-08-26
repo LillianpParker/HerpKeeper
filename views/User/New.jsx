@@ -11,7 +11,7 @@ class New extends React.Component {
           <div>
             <div className="grid-container2">
                 {/* Logo */}
-                <div className="Log-Placeholder">
+                <div className="Logo-Placeholder">
                             <img className="Logo" src="https://i.imgur.com/RxOMcaH.png"></img>
                     </div>
                 {/* Log In */}
@@ -32,8 +32,8 @@ class New extends React.Component {
                 <div className="newInfo Site-Info">
               <h1>New Record</h1>
               <form action="/" method="POST">
-                <label className="newOrderSelect Site-Info">Order:</label>
-                <select name="order">
+                <label className="Site-Info">Order:</label>
+                <select className="newSelect" name="order">
               {
                 options.map((option, i) => {
                   return(
@@ -42,8 +42,8 @@ class New extends React.Component {
                 })
                 }
                 </select><br/>
-                <label className="newSexSelect Site-Info">Sex:</label>
-                <select name="sex">
+                <label className="Site-Info">Sex:</label>
+                <select className="newSelect" name="sex">
               {
                 sexes.map((sex, i) => {
                   return(
@@ -56,9 +56,12 @@ class New extends React.Component {
                 Name or ID: <input type="text" name="name" /><br/>
                 Species: <input type="text" name="species" /><br/>
                 Color or Morph: <input type="text" name="color" /><br/>
+                Markings: <input type="text" name="markings" /><br/>
+                Origin: <input type="text" name="origin" /><br/>
                 Proven Individual: <input type="checkbox" name="proven" /><br/>
                 <input className="submit" type="submit" name="" value="Create Record"/><br/>
                </form>
+               <h1>An Edit option will be given after individuals are made. That is where feeding and veterinary information can be created.</h1>
                </div>
                         {/* Nav Bar */}
                         <div className="Nav-bar">

@@ -49,11 +49,26 @@ class Resources extends React.Component {
                             <h1>Training</h1>
                             <ul className="resource">
                                 <a className="resource" href="https://www.vetfolio.com/learn/article/the-benefits-of-training-and-enrichment-for-reptiles-who-knew">A Good source for some insight into Herp Training</a><br/>
+                                <a className="resource" href="https://www.facebook.com/Reptelligence/">Reptelligence: Focuses on Training and Enrichment</a><br/>
                             </ul>
-                            <h1>Enjoy socializing with like-minded people?</h1><br/>
+                            <hr></hr>
+                            <h1>Enjoy socializing with like-minded people?</h1>
                             <p className="pColor">Below is a list of some great facebook groups that provide quality care advice and have some very top-notch figures within.</p>
                             <ul className="resource">
-                                <a className="resource" href="https://www.facebook.com/Reptelligence/">Reptelligence: Focuses on Training and Enrichment</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/AdvancingHerpHusbandry/">A phenomenal group that also focuses in more unique species</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/cyclurafriends/">For those passionate about Cyclura</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/1491231621156887/">Great group for keepers with a focus in rare and uncommon</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/2326326320721418/">Another rare and uncommon group</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/240714813066320/">Good source for venomous keepers of any level</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/BRASUS/">Great Bioactive Setup Group</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/reptileenrichmentandtraining/">Another Reptile Enrichment and Training Group</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/1477609882345971/">Great group for Crocodilian lovers</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/872982909435439/">DIY Cage and Background Group</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/476195805756830/">Another group for those with an interest in Venomous snakes</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/BioactiveVivs/">Another Bioactive Exhibit Group</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/crocandgatorkeepers/">A group for crocodilian keepers</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/2415020071888374/">A good resource to see reviews when purchasing herpetofauna from an individual or company</a><br/>
+                                <a className="resource" href="https://www.facebook.com/groups/342910095878787/">Another very good resource to see reviews about an individual or company</a>
                             </ul>
                         </div>
                         {/* Nav Bar */}
