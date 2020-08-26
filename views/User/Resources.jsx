@@ -28,7 +28,7 @@ class Resources extends React.Component {
                         </div>
                         <div className="Site-Info">
                             <h1>Resources</h1>
-                            <p className="pColor">Every Herp Keeper should know they're only as good as the knowledge they know, and thus should always be actively learning. There are quite a variety of resources and as such, they've been compiled here.</p>
+                            <p className="pColor">Every Herp Keeper should know they're only as good as their knowledge, and thus should always be actively learning. There are quite a variety of resources and as such, they've been compiled here.</p>
                             <h1>Husbandry</h1>
                             <ul className="resource">
                                 <a className="resource" href="http://www.vspn.org/LIBRARY/WWWDirectory/Reptile.htm/">An Extensive list of Husbandry Resources</a><br/>
