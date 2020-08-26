@@ -65,7 +65,7 @@ class Edit extends React.Component {
                             Amount Fed: <input type="text" name="feedingAmount"/><br/>
                             Excretion: <input type="text" name="excretion"/><br/>
                             <input className="submit" type="submit" name="" value="Update Feeding Record"/><br/>
-                        </form><br/>
+                        </form><br/><hr></hr>
                         <form action={`/${record._id}/delete`} method="POST">
                         <input className="delete" type="submit" value="Delete Record?"/>
                         </form>
